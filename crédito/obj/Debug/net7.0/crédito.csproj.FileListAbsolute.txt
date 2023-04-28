@@ -1,0 +1,15 @@
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\bin\Debug\net7.0\crédito.exe
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\bin\Debug\net7.0\crédito.deps.json
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\bin\Debug\net7.0\crédito.runtimeconfig.json
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\bin\Debug\net7.0\crédito.dll
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\bin\Debug\net7.0\crédito.pdb
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\crédito.csproj.AssemblyReference.cache
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\crédito.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\crédito.AssemblyInfoInputs.cache
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\crédito.AssemblyInfo.cs
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\crédito.csproj.CoreCompileInputs.cache
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\crédito.dll
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\refint\crédito.dll
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\crédito.pdb
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\crédito.genruntimeconfig.cache
+C:\Users\48342168883\Desktop\Projeto_pagamento\crédito\obj\Debug\net7.0\ref\crédito.dll
