@@ -1,0 +1,15 @@
+C:\Users\tiago\Desktop\EduCredito\bin\Debug\net7.0\EduCredito.exe
+C:\Users\tiago\Desktop\EduCredito\bin\Debug\net7.0\EduCredito.deps.json
+C:\Users\tiago\Desktop\EduCredito\bin\Debug\net7.0\EduCredito.runtimeconfig.json
+C:\Users\tiago\Desktop\EduCredito\bin\Debug\net7.0\EduCredito.dll
+C:\Users\tiago\Desktop\EduCredito\bin\Debug\net7.0\EduCredito.pdb
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\EduCredito.csproj.AssemblyReference.cache
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\EduCredito.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\EduCredito.AssemblyInfoInputs.cache
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\EduCredito.AssemblyInfo.cs
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\EduCredito.csproj.CoreCompileInputs.cache
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\EduCredito.dll
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\refint\EduCredito.dll
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\EduCredito.pdb
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\EduCredito.genruntimeconfig.cache
+C:\Users\tiago\Desktop\EduCredito\obj\Debug\net7.0\ref\EduCredito.dll
