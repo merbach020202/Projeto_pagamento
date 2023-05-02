@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Projeto_pagamento
+namespace EduCredito
 {
-    public class Credito
+    public class Crédito
     {
-        public int juros()
-        {
-            int parcelamento = 0;
-            do
-            {
-                if (parcelamento >= 6)
-                {
-                    ValorTotal = (ValorCompra * 0.05) + ValorCompra;
-                }
-                else if (parcelamento > 6 && parcelamento <= 12)
-                {
-                    ValorTotal = (ValorCompra * 0.08) + ValorCompra;
-                }
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"Digite novamente o numero de parcelas realizado!");
-                    Console.ResetColor();
-                }
-            } while (QtdParcelas == 0 || QtdParcelas > 12);
-                
+        public int numParcelas;
 
-                return 0;
+        public float valorCompra;
+
+        public float juros()
+        {
+            if (numParcelas > 0 && numParcelas <= 6)
+            {
+                float valor = valorCompra / numParcelas;
+                float ValorJuros = (valor * 1.05F);
+                Console.WriteLine(@$"
+Parcelas por mes: {ValorJuros}");
+            }
+            else if (numParcelas > 6 && numParcelas <= 12)
+            {
+                float valor = valorCompra / numParcelas;
+                float ValorJuros = (valor * 1.08F);
+                Console.WriteLine(@$"
+Quantidade de parcelas por mês: {numParcelas}    
+Parcelas por mes: {ValorJuros}");
+            }
+
+            return 0;
         }
     }
 }
