@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Projeto_pagamento
 {
-    public class Boleto
+    public class Boleto : Pagamento
     {
-         public void PagamentoBoleto(double valorCompra)
+         public void PagamentoBoleto(double Valor)
         {
-            double valorBoleto = valorCompra * 0.88;
+            double valorBoleto = Valor * 0.88;
             string codigoBarras = GerarCodigoBarras();
             Console.WriteLine("Valor a ser pago: R$ " + valorBoleto.ToString("F2"));
             Console.WriteLine("Código de barras: " + codigoBarras);
