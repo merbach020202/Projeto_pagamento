@@ -1,12 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Projeto_pagamento;
 
 namespace EduCredito
 {
-    public class Crédito
+    public class Credito : Cartao
     {
         public int numParcelas;
 
@@ -17,8 +19,48 @@ namespace EduCredito
         double limite = 5000;
 
 
-        public void juros()
+        public override void Pagar()
         {
+            BandeiraCartao bandeiraCartao = new BandeiraCartao();
+
+            Console.WriteLine(@$"
+           ---------------------------------------
+          | quantas vezezes deseja parcelar?     |
+          |                                      |
+          |  juros de 5% até 6 parcelas          |
+          |  juros de 8% de 7 a 12 parcelas      |
+          |  (em até 12x)                        |
+          ---------------------------------------  
+            ");
+            Console.WriteLine($"Digite o número do seu cartão: ");
+            string bandeira = Console.ReadLine();
+
+            while (bandeira.Length != 16)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(@$"
+Número do cartão incorreto, digite novamente: ");
+Console.ResetColor();
+                bandeira = Console.ReadLine();
+            }
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(@$"
+Cartão selecionado: 
+{bandeiraCartao.IdentificarBandeira(bandeira)}");
+Console.ResetColor();
+
+
+            while (numParcelas <= 0 || numParcelas > 12)
+            {
+                Console.WriteLine(@$"
+Digite a quantidade de parcelas a serem efetuadas: ");
+                numParcelas = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine(@$"
+Digite o valor da compra: ");
+            valorCompra = float.Parse(Console.ReadLine());
+
             if (valorCompra > limite)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -40,17 +82,22 @@ Parcelas por mes: {ValorJuros}");
                 float ValorJuros = (valor * 1.08F);
                 Console.WriteLine(@$"
 Quantidade de parcelas por mês: {numParcelas}    
-Valor a ser pago por mês: {Math.Round(ValorJuros, 2)}");
+Valor a ser pago por mês: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
             }
 
             // float valorFinal = (  )
         }
+
+        // public override void Pagar()
+        // {
+        //     throw new NotImplementedException();
+        // }
     }
 }
 
 
 
-public class BandeiraCartao
+public class BandeiraCartao : Cartao
 {
     public void Main(string[] args)
     {
@@ -113,6 +160,11 @@ public class BandeiraCartao
     }
 
     internal void IdentificarBandeira()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void Pagar()
     {
         throw new NotImplementedException();
     }
