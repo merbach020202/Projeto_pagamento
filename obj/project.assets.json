@@ -8,11 +8,16 @@
     "net7.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\48260449846\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\38985141880\\.nuget\\packages\\": {}
+>>>>>>> origin/william
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\Projeto pagamento.csproj",
       "projectName": "Projeto pagamento",
       "projectPath": "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\Projeto pagamento.csproj",
@@ -21,6 +26,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\48260449846\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\38985141880\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
+      "projectName": "Projeto_pagamento",
+      "projectPath": "C:\\Users\\38985141880\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
+      "packagesPath": "C:\\Users\\38985141880\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\38985141880\\Desktop\\Projeto_pagamento\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\38985141880\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> origin/william
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
