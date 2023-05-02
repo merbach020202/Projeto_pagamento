@@ -11,9 +11,7 @@ Console.WriteLine(@$"
           ---------------------------------------  
             ");
 
-Console.WriteLine(@$"
-Digite a quantidade de parcelas a serem efetuadas: ");
-classe.numParcelas = int.Parse(Console.ReadLine());
+
 
 while (classe.numParcelas <= 0 || classe.numParcelas > 12)
 {
@@ -21,6 +19,10 @@ while (classe.numParcelas <= 0 || classe.numParcelas > 12)
 Digite a quantidade de parcelas a serem efetuadas: ");
     classe.numParcelas = int.Parse(Console.ReadLine());
 }
+
+Console.WriteLine($"Digite o valor da compra: ");
+classe.valorCompra = float.Parse(Console.ReadLine());
+
 
 classe.juros();
 

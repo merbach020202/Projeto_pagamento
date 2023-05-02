@@ -11,8 +11,21 @@ namespace EduCredito
 
         public float valorCompra;
 
-        public float juros()
+        public float valorTotal;
+
+        double limite = 5000;
+
+
+        public void juros()
         {
+            if (valorCompra > limite)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Limite estourado!");
+                Console.ResetColor();
+                Environment.Exit(0);
+            }
+
             if (numParcelas > 0 && numParcelas <= 6)
             {
                 float valor = valorCompra / numParcelas;
@@ -26,10 +39,9 @@ Parcelas por mes: {ValorJuros}");
                 float ValorJuros = (valor * 1.08F);
                 Console.WriteLine(@$"
 Quantidade de parcelas por mês: {numParcelas}    
-Parcelas por mes: {ValorJuros}");
+Parcelas por mes: {Math.Round(ValorJuros, 2)}");
             }
-
-            return 0;
         }
     }
 }
+
