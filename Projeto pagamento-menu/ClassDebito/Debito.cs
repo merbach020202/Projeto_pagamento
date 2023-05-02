@@ -8,5 +8,6 @@ namespace Projeto_pagamento.ClassDebito
     public class Debito
     {
         private float Saldo;
+        
     }
 }
