@@ -1,6 +1,8 @@
 ﻿using EduCredito;
 Crédito classe = new Crédito();
 
+BandeiraCartao bandeiraCartao = new BandeiraCartao();
+
 Console.WriteLine(@$"
            ---------------------------------------
           | quantas vezezes deseja parcelar?     |
@@ -11,6 +13,12 @@ Console.WriteLine(@$"
           ---------------------------------------  
             ");
 
+Console.WriteLine($"Digite o número do seu cartão: ");
+string bandeira = Console.ReadLine();
+
+Console.WriteLine(@$"
+Cartão selecionado: 
+{bandeiraCartao.IdentificarBandeira(bandeira)}");
 
 
 while (classe.numParcelas <= 0 || classe.numParcelas > 12)
@@ -20,28 +28,16 @@ Digite a quantidade de parcelas a serem efetuadas: ");
     classe.numParcelas = int.Parse(Console.ReadLine());
 }
 
-Console.WriteLine($"Digite o valor da compra: ");
+Console.WriteLine(@$"
+Digite o valor da compra: ");
 classe.valorCompra = float.Parse(Console.ReadLine());
 
 
 classe.juros();
 
-// if (numParcelas > 0 && numParcelas <= 6)
-// {
-//     float valor = valorCompra / numParcelas;
-//     float ValorJuros = (valor * 1.05F);
-//     Console.WriteLine(@$"
-// Parcelas por mes: {ValorJuros}");
-// }
-// else if (numParcelas > 6 && numParcelas <= 12)
-// {
-//     float valor = valorCompra / numParcelas;
-//     float ValorJuros = (valor * 1.08F);
-//     Console.WriteLine(@$"
-// Quantidade de parcelas por mês: {numParcelas}    
-// Parcelas por mes: {ValorJuros}");
-// }
 
-//feito
+
+
+
 
 
