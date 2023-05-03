@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
-      "projectName": "Projeto pagamento",
-      "projectPath": "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
+      "projectUniqueName": "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
+      "projectName": "Projeto_pagamento",
+      "projectPath": "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
       "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\obj\\",
       "projectStyle": "PackageReference",
