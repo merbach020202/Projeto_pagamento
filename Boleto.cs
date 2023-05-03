@@ -34,12 +34,6 @@ namespace Projeto_pagamento
             return codigoBarras;
         }
 
-
-
-
-
-
-
         //  public string GerarCodigoBarras()
         // {
         //     Random rnd = new Random();
