@@ -7,7 +7,6 @@ namespace Projeto_pagamento
 {
     public class Boleto : Pagamento
     {
-        string endereco = "";
          public void PagamentoBoleto(double Valor)
         {
             double valorBoleto = Valor * 0.88;
