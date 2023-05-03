@@ -8,19 +8,46 @@
     "net7.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\44850641822\\.nuget\\packages\\": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\48260449846\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\38985141880\\.nuget\\packages\\": {}
+>>>>>>> origin/william
+>>>>>>> 044a849bec06cc1ead80809e38d2342cf97099bd
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\Projeto pagamento.csproj",
+      "projectName": "Projeto pagamento",
+      "projectPath": "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\Projeto pagamento.csproj",
+      "packagesPath": "C:\\Users\\48260449846\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\48260449846\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\38985141880\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
+>>>>>>> 044a849bec06cc1ead80809e38d2342cf97099bd
       "projectName": "Projeto_pagamento",
       "projectPath": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
       "packagesPath": "C:\\Users\\44850641822\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\44850641822\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\38985141880\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> origin/william
+>>>>>>> 044a849bec06cc1ead80809e38d2342cf97099bd
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

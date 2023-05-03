@@ -17,6 +17,8 @@ namespace Projeto_pagamento
 
         public string cvv;
 
+        private int Saldo;
+
         public abstract void Pagar();
 
         public string salvarCartao()

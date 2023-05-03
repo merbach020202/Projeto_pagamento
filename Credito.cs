@@ -12,11 +12,11 @@ namespace EduCredito
     {
         public int numParcelas;
 
-        public float valorCompra;
+        public float valor;
 
         public float valorTotal;
 
-        double limite = 5000;
+        double limite = 2000;
 
 
         public override void Pagar()
@@ -60,9 +60,9 @@ Digite a quantidade de parcelas a serem efetuadas: ");
 
             Console.WriteLine(@$"
 Digite o valor da compra: ");
-            valorCompra = float.Parse(Console.ReadLine());
+            valor = float.Parse(Console.ReadLine());
 
-            if (valorCompra > limite)
+            if (valor > limite)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Limite estourado!");
@@ -72,14 +72,14 @@ Digite o valor da compra: ");
 
             if (numParcelas > 0 && numParcelas <= 6)
             {
-                float valor = valorCompra / numParcelas;
+                float valorCompra = valor / numParcelas;
                 float ValorJuros = (valor * 1.05F);
                 Console.WriteLine(@$"
 Parcelas por mes: {ValorJuros}");
             }
             else if (numParcelas > 6 && numParcelas <= 12)
             {
-                float valor = valorCompra / numParcelas;
+                float valorCompra = valor / numParcelas;
                 float ValorJuros = (valor * 1.08F);
                 Console.WriteLine(@$"
 Quantidade de parcelas por mês: {numParcelas}  
