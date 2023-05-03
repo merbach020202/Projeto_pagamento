@@ -13,9 +13,6 @@ namespace Projeto_pagamento
             double valorBoleto = Valor * 0.88;
             string codigoBarras = GerarCodigoBarras();
 
-            Console.WriteLine($"Digite seu endereço: ");
-            endereco = Console.ReadLine();
-
             Console.WriteLine(titular);
             Console.WriteLine(endereco);
             Console.WriteLine("Valor a ser pago: R$ " + valorBoleto.ToString("F2"));
