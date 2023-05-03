@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\Projeto pagamento.csproj": {}
+    "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\Projeto pagamento.csproj": {
+    "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\Projeto pagamento.csproj",
+        "projectUniqueName": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
         "projectName": "Projeto pagamento",
-        "projectPath": "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\Projeto pagamento.csproj",
-        "packagesPath": "C:\\Users\\48260449846\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\obj\\",
+        "projectPath": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
+        "packagesPath": "C:\\Users\\44850641822\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\48260449846\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\44850641822\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

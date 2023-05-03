@@ -1,20 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "iMaAszaFq1OewwLCmpJ87oBRd7b1KZkDeCv+tYuDs8pKZsLZCkHUbu2EX7GLH2RntifCr++nOmrjIMKwd2MvfA==",
+  "dgSpecHash": "Xst4MUF1D+Yj2iZszEbCaYMA74ZEvVzyikkwn/ViLuD/LptNu0d5TMB95EZEdG5lnnEamn5sBVYByVfEtcPruQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
-=======
-<<<<<<< HEAD
-  "dgSpecHash": "JKc/g+DxLUbUsjDrkwK5ndaEdgYfFnUa5QLRxNf8eYrfwMWXUk77WfUjcmFPzW2OdOlH5a08UrWZ3IKATXgp7A==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\48260449846\\Desktop\\Back-end-1\\POO\\Projeto pagamento-menu\\Projeto pagamento.csproj",
-=======
-  "dgSpecHash": "HV7gCSVadW8NksbiEzEszoa4SnvojdU+V4N6AlZUy3mezYhyLuuM5PgaCYChsqZG5Es+jCYM4/KTnOxl17ypRg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\38985141880\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
->>>>>>> origin/william
->>>>>>> 044a849bec06cc1ead80809e38d2342cf97099bd
+  "projectFilePath": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
   "expectedPackageFiles": [],
   "logs": [
     {

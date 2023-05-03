@@ -40,15 +40,15 @@ namespace EduCredito
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(@$"
 Número do cartão incorreto, digite novamente: ");
-Console.ResetColor();
+                Console.ResetColor();
                 bandeira = Console.ReadLine();
             }
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@$"
 Cartão selecionado:");
-Console.ResetColor();
+            Console.ResetColor();
 
-Console.WriteLine($"{bandeiraCartao.IdentificarBandeira(bandeira)}");
+            Console.WriteLine($"{bandeiraCartao.IdentificarBandeira(bandeira)}");
 
 
             while (numParcelas <= 0 || numParcelas > 12)
@@ -67,7 +67,6 @@ Digite o valor da compra: ");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Limite estourado!");
                 Console.ResetColor();
-                Environment.Exit(0);
             }
 
             if (numParcelas > 0 && numParcelas <= 6)
@@ -85,18 +84,16 @@ Parcelas por mes: {ValorJuros}");
 Quantidade de parcelas por mês: {numParcelas}  
   
 Valor a ser pago por mês: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
+
+Console.WriteLine(@$"
+Aperte enter para sair!"
+);
+Console.ReadKey();
+
             }
-
-            // float valorFinal = (  )
         }
-
-        // public override void Pagar()
-        // {
-        //     throw new NotImplementedException();
-        // }
     }
 }
-
 
 
 public class BandeiraCartao : Cartao
@@ -107,7 +104,7 @@ public class BandeiraCartao : Cartao
         string[] cartoes = {
             "4111111111111111", // Visa
             "5500000000000004", // Mastercard
-            "340000000000009", // American Express
+            "3400000000000092", // American Express
             "6011000000000004", // Discover
             "3530111333300000", // JCB
             "6331101999990016" // Switch/Solo (agora Maestro)

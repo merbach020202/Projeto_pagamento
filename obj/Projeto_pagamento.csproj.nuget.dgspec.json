@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\44850641822\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\32784630803\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\32784630803\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\32784630803\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
+        "projectName": "Projeto_pagamento",
+        "projectPath": "C:\\Users\\32784630803\\Desktop\\Projeto_pagamento\\Projeto_pagamento.csproj",
+        "packagesPath": "C:\\Users\\32784630803\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\32784630803\\Desktop\\Projeto_pagamento\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\32784630803\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> ddb164b66a70a9b98a8dcbc5c7292e4441b8de55
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
