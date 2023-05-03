@@ -7,26 +7,40 @@ namespace Projeto_pagamento.ClassDebito
 {
     public class Debito : Cartao
     {
-        private float Saldo;
-        
-        public void PagamentoDebito()
-        {
-            Saldo = 1000;
+        public float Saldo { get; private set; }
 
-            if(Valor <= Saldo)
+        public override void Pagar()
+        {
+            Saldo = 2000;
+
+            Console.Write(@$"
+Digite o valor da compra: ");
+            float  Valor = float.Parse(Console.ReadLine());
+             while (Valor < 0)
             {
-                Console.WriteLine($"O pagamento de R$ {Valor} foi realizado");
+                Console.Write(@$"
+Digite o valor correto da compra: ");
+                Valor = float.Parse(Console.ReadLine());
+            }
+            
+            if (Valor <= Saldo)
+            {
+                Console.WriteLine(@$"
+O pagamento de R$ {Valor} foi realizado");
             }
 
             else
             {
-                 Console.WriteLine($"Saldo insuficiente");
-             }
-         }
-
-        public override void Pagar()
-        {
-            throw new NotImplementedException();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Saldo insuficiente");
+                Console.ResetColor();
+            }
+            Console.WriteLine(@$"
+Aperte enter para sair!"
+);
+            Console.ReadKey();
         }
     }
 }
+
+

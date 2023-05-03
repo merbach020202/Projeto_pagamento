@@ -7,21 +7,12 @@ namespace Projeto_pagamento
 {
     public class Pagamento //Classe pagamento
     {
-        public string titular()
-        {
-            Console.WriteLine($"Digite o nome do titular: ");
-            string titular = Console.ReadLine();
-
-            return "";
-        }
-        
+        public DateTime Data { get; private set; } = DateTime.Now.Date; //propriedade data
         public float Valor { get; set; } // propriedade valor
 
-        public DateTime Data { get; private set; } //propriedade data
-
-        public void GeraDataPagamento()
+        public string Cancelar()
         {
-            this.Data = DateTime.Now;
-        }
+            return "Operacao cancelada";          
+        }        
     }
 }
