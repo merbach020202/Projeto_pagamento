@@ -45,9 +45,10 @@ Console.ResetColor();
             }
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@$"
-Cartão selecionado: 
-{bandeiraCartao.IdentificarBandeira(bandeira)}");
+Cartão selecionado:");
 Console.ResetColor();
+
+Console.WriteLine($"{bandeiraCartao.IdentificarBandeira(bandeira)}");
 
 
             while (numParcelas <= 0 || numParcelas > 12)
@@ -81,7 +82,8 @@ Parcelas por mes: {ValorJuros}");
                 float valor = valorCompra / numParcelas;
                 float ValorJuros = (valor * 1.08F);
                 Console.WriteLine(@$"
-Quantidade de parcelas por mês: {numParcelas}    
+Quantidade de parcelas por mês: {numParcelas}  
+  
 Valor a ser pago por mês: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
             }
 
