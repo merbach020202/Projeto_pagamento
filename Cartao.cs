@@ -5,11 +5,8 @@ using System.Threading.Tasks;
 
 namespace Projeto_pagamento
 {
-    public abstract class Cartao 
+    public abstract class Cartao : Pagamento
     {
-
-
-        public string titular;
 
         public string numeroCartao;
 
@@ -23,8 +20,7 @@ namespace Projeto_pagamento
 
         public string salvarCartao()
         {
-            Console.WriteLine($"Digite o nome do titular: ");
-            titular = Console.ReadLine();
+            titular();
             
             Console.WriteLine($"Digite o número do cartão: ");
             numeroCartao = Console.ReadLine();
@@ -32,13 +28,10 @@ namespace Projeto_pagamento
             Console.WriteLine($"Digite a bandeira do cartao: ");
             bandeira = Console.ReadLine();
             
-            Console.WriteLine($"Digite o nome do titular: ");
+            Console.WriteLine($"Digite o cvv do cartão: ");
             cvv = Console.ReadLine();
             
             return "";
         }
-
     }
-
-    
 }
