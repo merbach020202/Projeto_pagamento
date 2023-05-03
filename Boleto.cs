@@ -13,7 +13,6 @@ namespace Projeto_pagamento
             string codigoBarras = GerarCodigoBarras();
 
             Console.WriteLine(titular);
-            Console.WriteLine(endereco);
             Console.WriteLine("Valor a ser pago: R$ " + valorBoleto.ToString("F2"));
             Console.WriteLine("Código de barras: " + codigoBarras);
         }
