@@ -25,14 +25,14 @@ Digite o valor correto da compra: ");
             double valorBoleto = Valor * 0.88;
             string codigoBarras = GerarCodigoBarras();
 
-            Console.WriteLine("\nValor a ser pago com desconto: R$ " + valorBoleto.ToString("F2"));
+            Console.WriteLine("\nValor a ser pago com desconto!: R$ " + valorBoleto.ToString("F2"));
             Console.WriteLine("\nCódigo de barras: " + codigoBarras);
 
             // Adiciona 3 dias à data de vencimento
             DateTime dataAtual = DateTime.Now.Date;
             TimeSpan diasParaPagar = dataVencimento.Date - dataAtual;
             DateTime dataLimite = dataAtual.AddDays(Math.Max(3, diasParaPagar.Days));
-            Console.WriteLine("\nData limite para pagamento: " + dataLimite.ToString("dd/MM/yyyy"));
+            Console.WriteLine("\nData limite para pagamento!: " + dataLimite.ToString("dd/MM/yyyy"));
         }
         public string GerarCodigoBarras()
         {

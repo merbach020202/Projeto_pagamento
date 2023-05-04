@@ -78,18 +78,27 @@ Digite o valor correto da compra: ");
             if (numParcelas > 0 && numParcelas <= 6)
             {
                 float valorCompra = valor / numParcelas;
-                float ValorJuros = (valor * 1.05F);
+                float ValorJuros = (valorCompra * 1.05F);
                 Console.WriteLine(@$"
-Parcelas por mes: {ValorJuros}");
+Quantidade de parcelas por mês!: {numParcelas}  
+  
+Valor a ser pago por mês!: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
+
+                Console.WriteLine(@$"
+Aperte enter para sair!"
+                );
+                Console.ReadKey();
+
+
             }
             else if (numParcelas > 6 && numParcelas <= 12)
             {
                 float valorCompra = valor / numParcelas;
-                float ValorJuros = (valor * 1.08F);
+                float ValorJuros = (valorCompra * 1.08F);
                 Console.WriteLine(@$"
-Quantidade de parcelas por mês: {numParcelas}  
+Quantidade de parcelas por mês!: {numParcelas}  
   
-Valor a ser pago por mês: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
+Valor a ser pago por mês!: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
 
                 Console.WriteLine(@$"
 Aperte enter para sair!"
