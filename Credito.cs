@@ -83,7 +83,7 @@ Parcelas por mes: {ValorJuros}");
                 Console.WriteLine(@$"
 Quantidade de parcelas por mês: {numParcelas}  
   
-Valor a ser pago por mês: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
+Valor de cada parcela: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
 
 Console.WriteLine(@$"
 Aperte enter para sair!"

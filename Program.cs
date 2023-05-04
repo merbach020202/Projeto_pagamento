@@ -56,14 +56,14 @@ Operação cancelada!
             break;
         case "3":
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Você escolheu pagamento em crédito");
+            Console.WriteLine($"Você escolheu pagamento em crédito!");
             Console.ResetColor();
             credito.Pagar();
             Console.Clear();
             break;
         case "4":
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\nVocê escolheu pagamento em boleto");
+            Console.WriteLine($"\nVocê escolheu pagamento em boleto!");
             Console.ResetColor();
             boleto.PagamentoBoleto();
             boleto.GerarCodigoBarras();
@@ -73,7 +73,7 @@ Operação cancelada!
             break;
         default:
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Selecione uma opção válida");
+            Console.WriteLine($"Selecione uma opção válida!");
             Console.ResetColor();
             Console.Clear();
             break;

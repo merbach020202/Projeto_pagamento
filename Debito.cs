@@ -20,13 +20,13 @@ Digite o valor da compra: ");
             if (Valor <= Saldo)
             {
                 Console.WriteLine(@$"
-O pagamento de R$ {Valor} foi realizado");
+O pagamento de R$ {Valor} foi realizado!");
             }
 
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Saldo insuficiente");
+                Console.WriteLine($"Saldo insuficiente!");
                 Console.ResetColor();
             }
             Console.WriteLine(@$"
