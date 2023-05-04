@@ -6,6 +6,20 @@ Credito credito = new Credito();
 Boleto boleto = new Boleto();
 Debito debito = new Debito();
 
+static void BarraCarregamento(string texto, int quantidadePontinhos, int tempo)
+{
+
+    Console.Write(texto);
+
+    for (int i = 0; i < quantidadePontinhos; i++)
+    {
+        Console.Write($".");
+        Thread.Sleep(tempo);
+    }
+
+
+}
+
 
 // ========
 string menu;
@@ -31,15 +45,23 @@ do
     switch (menu)
     {
         case "0":
+            BarraCarregamento(@"
+Carregando", 8, 400
+);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(@$"
+            
 FIM!"
 );
             Console.ResetColor();
             break;
         case "1":
+            BarraCarregamento(@"
+Carregando", 8, 400
+);
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(@$"
+
 Operação cancelada!
 ");
             Console.ResetColor();
@@ -49,22 +71,34 @@ Operação cancelada!
             break;
         case "2":
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\nVocê escolheu pagamento em débito!");
+            Console.WriteLine($"\nVocê escolheu pagamento em débito!"
+            );
             Console.ResetColor();
+            BarraCarregamento(@"
+Carregando", 8, 400
+);
             debito.Pagar();
             Console.Clear();
             break;
         case "3":
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Você escolheu pagamento em crédito!");
+            Console.WriteLine($"Você escolheu pagamento em crédito!"
+            );
             Console.ResetColor();
+            BarraCarregamento(@"
+Carregando", 8, 400
+);
             credito.Pagar();
             Console.Clear();
             break;
         case "4":
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\nVocê escolheu pagamento em boleto!");
+            Console.WriteLine($"\nVocê escolheu pagamento em boleto!"
+            );
             Console.ResetColor();
+            BarraCarregamento(@"
+Carregando", 8, 400
+);
             boleto.PagamentoBoleto();
             boleto.GerarCodigoBarras();
             Console.WriteLine($"\nAperte enter para continuar!");
