@@ -80,9 +80,9 @@ Digite o valor correto da compra: ");
                 float valorCompra = valor / numParcelas;
                 float ValorJuros = (valor * 1.05F);
                 Console.WriteLine(@$"
-Quantidade de parcelas por mês: {numParcelas}  
+Quantidade de parcelas por mês!: {numParcelas}  
   
-Valor a ser pago por mês: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
+Valor a ser pago por mês!: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
 
                 Console.WriteLine(@$"
 Aperte enter para sair!"
@@ -96,9 +96,9 @@ Aperte enter para sair!"
                 float valorCompra = valor / numParcelas;
                 float ValorJuros = (valor * 1.08F);
                 Console.WriteLine(@$"
-Quantidade de parcelas por mês: {numParcelas}  
+Quantidade de parcelas por mês!: {numParcelas}  
   
-Valor a ser pago por mês: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
+Valor a ser pago por mês!: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
 
                 Console.WriteLine(@$"
 Aperte enter para sair!"
