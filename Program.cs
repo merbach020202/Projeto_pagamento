@@ -45,20 +45,24 @@ do
     switch (menu)
     {
         case "0":
+            Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
 Carregando", 8, 400
 );
+            Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(@$"
-            
+
 FIM!"
 );
             Console.ResetColor();
             break;
         case "1":
+            Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
 Carregando", 8, 400
 );
+            Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(@$"
 
@@ -74,9 +78,11 @@ Operação cancelada!
             Console.WriteLine($"\nVocê escolheu pagamento em débito!"
             );
             Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
 Carregando", 8, 400
 );
+            Console.ResetColor();
             debito.Pagar();
             Console.Clear();
             break;
@@ -84,10 +90,11 @@ Carregando", 8, 400
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"Você escolheu pagamento em crédito!"
             );
-            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
 Carregando", 8, 400
 );
+            Console.ResetColor();
             credito.Pagar();
             Console.Clear();
             break;
@@ -95,10 +102,11 @@ Carregando", 8, 400
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"\nVocê escolheu pagamento em boleto!"
             );
-            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
 Carregando", 8, 400
 );
+            Console.ResetColor();
             boleto.PagamentoBoleto();
             boleto.GerarCodigoBarras();
             Console.WriteLine($"\nAperte enter para continuar!");
