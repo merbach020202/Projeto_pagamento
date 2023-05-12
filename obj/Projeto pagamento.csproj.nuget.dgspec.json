@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj": {}
+    "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\Projeto pagamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj": {
+    "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\Projeto pagamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
+        "projectUniqueName": "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\Projeto pagamento.csproj",
         "projectName": "Projeto pagamento",
-        "projectPath": "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
-        "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Desktop\\Projeto_pagamento\\obj\\",
+        "projectPath": "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\Projeto pagamento.csproj",
+        "packagesPath": "C:\\Users\\44850641822\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\44850641822\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -14,14 +14,9 @@ namespace Projeto_pagamento.ClassDebito
             Saldo = 2000;
 
             Console.Write(@$"
+            
 Digite o valor da compra: ");
             float  Valor = float.Parse(Console.ReadLine());
-             while (Valor < 0)
-            {
-                Console.Write(@$"
-Digite o valor correto da compra: ");
-                Valor = float.Parse(Console.ReadLine());
-            }
             
             if (Valor <= Saldo)
             {
@@ -32,12 +27,14 @@ O pagamento de R$ {Valor} foi realizado!");
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Saldo insuficiente");
+                Console.WriteLine($"\nSaldo insuficiente!");
                 Console.ResetColor();
             }
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@$"
 Aperte enter para sair!"
 );
+            Console.ResetColor();
             Console.ReadKey();
         }
     }

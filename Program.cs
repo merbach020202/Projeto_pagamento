@@ -2,9 +2,11 @@ using EduCredito;
 using Projeto_pagamento;
 using Projeto_pagamento.ClassDebito;
 
+
 Credito credito = new Credito();
 Boleto boleto = new Boleto();
 Debito debito = new Debito();
+Beep beep = new Beep();
 
 static void BarraCarregamento(string texto, int quantidadePontinhos, int tempo)
 {
@@ -40,6 +42,8 @@ do
         | 0 - sair do sistema                   |
         -----------------------------------------
         ");
+    
+
     Console.WriteLine($"Escolha uma opção");
     menu = Console.ReadLine();
     switch (menu)
@@ -47,23 +51,27 @@ do
         case "0":
             Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
-Saindo", 8, 400
+Carregando", 8, 400
 );
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(@$"
+
 FIM!"
 );
             Console.ResetColor();
+            beep.PlayMarioMusic();
             break;
+
         case "1":
             Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
-Cancelando", 8, 400
+Carregando", 8, 400
 );
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(@$"
+
 Operação cancelada!
 ");
             Console.ResetColor();
@@ -71,54 +79,63 @@ Operação cancelada!
             Console.ReadKey();
             Console.Clear();
             break;
+
         case "2":
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\nVocê escolheu pagamento em débito!");
+            Console.WriteLine($"\nVocê escolheu pagamento em débito!"
+            );
             Console.ResetColor();
-            Console.ResetColor();
-            debito.Pagar();
             Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
-Concluindo o pagamento", 8, 400
+Carregando", 8, 400
 );
-Console.ResetColor();
+            Console.ResetColor();
+            Console.Clear();
+            debito.Pagar();
             Console.Clear();
             break;
+
         case "3":
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Você escolheu pagamento em crédito");
-            Console.ResetColor();
-            credito.Pagar();
+            Console.WriteLine($"\nVocê escolheu pagamento em crédito!"
+            );
             Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
-Concluindo o pagamento", 8, 400
+Carregando", 8, 400
 );
-Console.ResetColor();
+            Console.ResetColor();
             Console.Clear();
+            credito.Pagar();
             break;
+
         case "4":
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\nVocê escolheu pagamento em boleto");
-            Console.ResetColor();
-            boleto.PagamentoBoleto();
-            boleto.GerarCodigoBarras();
-            Console.WriteLine($"\nAperte enter para continuar!");
-            Console.ReadKey();
+            Console.WriteLine($"\nVocê escolheu pagamento em boleto!"
+            );
             Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
-Concluindo o pagamento", 8, 400
+Carregando", 8, 400
 );
-Console.ResetColor();
+            Console.ResetColor();
+            Console.Clear();
+            boleto.PagamentoBoleto();
+            boleto.GerarCodigoBarras();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"\nAperte enter para continuar!");
+            Console.ResetColor();
+            Console.ReadKey();
             Console.Clear();
             break;
+
         default:
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Selecione uma opção válida");
+            Console.WriteLine($"Selecione uma opção válida!");
             Console.ResetColor();
-             Console.WriteLine($"\nAperte enter para continuar!");
-            Console.ReadKey();
+            Console.Clear();
             break;
     }
+
+
 } while (menu != "0");
 
 

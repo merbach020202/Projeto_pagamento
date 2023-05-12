@@ -16,7 +16,7 @@ namespace EduCredito
 
         public float valorTotal;
 
-        double limite = 2000;
+        float limite = 2000;
 
 
         public override void Pagar()
@@ -58,54 +58,57 @@ Digite a quantidade de parcelas a serem efetuadas: ");
                 numParcelas = int.Parse(Console.ReadLine());
             }
 
-            Console.Write(@$"
+            Console.WriteLine(@$"
 Digite o valor da compra: ");
             valor = float.Parse(Console.ReadLine());
-            while (valor < 0)
-            {
-                Console.Write(@$"
-Digite o valor correto da compra: ");
-                valor = float.Parse(Console.ReadLine());
-            }
 
             if (valor > limite)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Limite estourado!");
+                Console.WriteLine(@$"
+Limite estourado!");
                 Console.ResetColor();
-            }
-
-            if (numParcelas > 0 && numParcelas <= 6)
-            {
-                float valorCompra = valor / numParcelas;
-                float ValorJuros = (valorCompra * 1.05F);
-                Console.WriteLine(@$"
-Quantidade de parcelas por mês!: {numParcelas}  
-  
-Valor a ser pago por mês!: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
-
-                Console.WriteLine(@$"
-Aperte enter para sair!"
-                );
+                Console.WriteLine($"Pressione enter para continuar!");
                 Console.ReadKey();
-
-
+                Console.Clear();
             }
-            else if (numParcelas > 6 && numParcelas <= 12)
+            else
             {
-                float valorCompra = valor / numParcelas;
-                float ValorJuros = (valorCompra * 1.08F);
-                Console.WriteLine(@$"
-Quantidade de parcelas por mês!: {numParcelas}  
-  
-Valor a ser pago por mês!: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
 
-                Console.WriteLine(@$"
+                if (numParcelas > 0 && numParcelas <= 6)
+                {
+                    float valorCompra = valor / numParcelas;
+                    float ValorJuros = (valorCompra * 1.05F);
+                    Console.WriteLine(@$"
+Parcelas por mes: {numParcelas}
+
+Valor de cada parcela: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
+
+                    Console.WriteLine(@$"
 Aperte enter para sair!"
-                );
-                Console.ReadKey();
+                    );
+                    Console.ReadKey();
+                    Console.Clear();
 
+                }
+                else if (numParcelas > 6 && numParcelas <= 12)
+                {
+                    float valorCompra = valor / numParcelas;
+                    float ValorJuros = (valorCompra * 1.08F);
+                    Console.WriteLine(@$"
+Parcelas por mes: {numParcelas}  
+
+Valor de cada parcela: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
+
+                    Console.WriteLine(@$"
+Aperte enter para sair!"
+                    );
+                    Console.ReadKey();
+                    Console.Clear();
+
+                }
             }
+
         }
     }
 }
