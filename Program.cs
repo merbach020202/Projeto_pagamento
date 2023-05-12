@@ -2,9 +2,11 @@ using EduCredito;
 using Projeto_pagamento;
 using Projeto_pagamento.ClassDebito;
 
+
 Credito credito = new Credito();
 Boleto boleto = new Boleto();
 Debito debito = new Debito();
+Beep beep = new Beep();
 
 static void BarraCarregamento(string texto, int quantidadePontinhos, int tempo)
 {
@@ -40,6 +42,8 @@ do
         | 0 - sair do sistema                   |
         -----------------------------------------
         ");
+    
+
     Console.WriteLine($"Escolha uma opção");
     menu = Console.ReadLine();
     switch (menu)
@@ -56,7 +60,9 @@ Carregando", 8, 400
 FIM!"
 );
             Console.ResetColor();
+            beep.PlayMarioMusic();
             break;
+
         case "1":
             Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
@@ -73,6 +79,7 @@ Operação cancelada!
             Console.ReadKey();
             Console.Clear();
             break;
+
         case "2":
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"\nVocê escolheu pagamento em débito!"
@@ -83,21 +90,25 @@ Operação cancelada!
 Carregando", 8, 400
 );
             Console.ResetColor();
+            Console.Clear();
             debito.Pagar();
             Console.Clear();
             break;
+
         case "3":
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Você escolheu pagamento em crédito!"
+            Console.WriteLine($"\nVocê escolheu pagamento em crédito!"
             );
             Console.ForegroundColor = ConsoleColor.Blue;
             BarraCarregamento(@"
 Carregando", 8, 400
 );
             Console.ResetColor();
+            Console.Clear();
             credito.Pagar();
             Console.Clear();
             break;
+
         case "4":
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"\nVocê escolheu pagamento em boleto!"
@@ -107,12 +118,16 @@ Carregando", 8, 400
 Carregando", 8, 400
 );
             Console.ResetColor();
+            Console.Clear();
             boleto.PagamentoBoleto();
             boleto.GerarCodigoBarras();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"\nAperte enter para continuar!");
+            Console.ResetColor();
             Console.ReadKey();
             Console.Clear();
             break;
+
         default:
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Selecione uma opção válida!");

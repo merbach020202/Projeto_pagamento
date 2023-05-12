@@ -43,3 +43,18 @@ C:\Users\44850641822\Desktop\Projeto_pagamento\obj\Debug\net7.0\refint\Projeto p
 C:\Users\44850641822\Desktop\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.pdb
 C:\Users\44850641822\Desktop\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.genruntimeconfig.cache
 C:\Users\44850641822\Desktop\Projeto_pagamento\obj\Debug\net7.0\ref\Projeto pagamento.dll
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\bin\Debug\net7.0\Projeto pagamento.exe
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\bin\Debug\net7.0\Projeto pagamento.deps.json
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\bin\Debug\net7.0\Projeto pagamento.runtimeconfig.json
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\bin\Debug\net7.0\Projeto pagamento.dll
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\bin\Debug\net7.0\Projeto pagamento.pdb
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.csproj.AssemblyReference.cache
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.AssemblyInfoInputs.cache
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.AssemblyInfo.cs
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.csproj.CoreCompileInputs.cache
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.dll
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\refint\Projeto pagamento.dll
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.pdb
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\Projeto pagamento.genruntimeconfig.cache
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Trabalho em grupo\Projeto_pagamento\obj\Debug\net7.0\ref\Projeto pagamento.dll

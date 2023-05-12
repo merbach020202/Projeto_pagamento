@@ -27,12 +27,14 @@ O pagamento de R$ {Valor} foi realizado!");
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Saldo insuficiente!");
+                Console.WriteLine($"\nSaldo insuficiente!");
                 Console.ResetColor();
             }
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@$"
 Aperte enter para sair!"
 );
+            Console.ResetColor();
             Console.ReadKey();
         }
     }

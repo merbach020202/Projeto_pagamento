@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj": {}
+    "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\Projeto pagamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj": {
+    "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\Projeto pagamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
+        "projectUniqueName": "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\Projeto pagamento.csproj",
         "projectName": "Projeto pagamento",
-        "projectPath": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
+        "projectPath": "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\Projeto pagamento.csproj",
         "packagesPath": "C:\\Users\\44850641822\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\obj\\",
+        "outputPath": "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\44850641822\\AppData\\Roaming\\NuGet\\NuGet.Config",

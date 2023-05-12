@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xst4MUF1D+Yj2iZszEbCaYMA74ZEvVzyikkwn/ViLuD/LptNu0d5TMB95EZEdG5lnnEamn5sBVYByVfEtcPruQ==",
+  "dgSpecHash": "u213AUoFHYIeAGSZ64Z+IyFqhqUNXxmxKAQlkDj+9sbTK86efkLY+ynlsiffqNb1nwV76MhYwJ3JUi/XCREFtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\Projeto pagamento.csproj",
+  "projectFilePath": "C:\\Users\\44850641822\\Desktop\\BackEnd\\SEMESTRE 1\\Trabalho em grupo\\Projeto_pagamento\\Projeto pagamento.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\44850641822\\Desktop\\Projeto_pagamento\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
