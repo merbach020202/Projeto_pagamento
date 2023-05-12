@@ -106,7 +106,6 @@ Carregando", 8, 400
             Console.ResetColor();
             Console.Clear();
             credito.Pagar();
-            Console.Clear();
             break;
 
         case "4":
