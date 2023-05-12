@@ -68,41 +68,47 @@ Digite o valor da compra: ");
                 Console.WriteLine(@$"
 Limite estourado!");
                 Console.ResetColor();
-                Environment.Exit(0);
+                Console.WriteLine($"Pressione enter para continuar!");
+                Console.ReadKey();
+                Console.Clear();
             }
-
-            if (numParcelas > 0 && numParcelas <= 6)
+            else
             {
-                float valorCompra = valor / numParcelas;
-                float ValorJuros = (valorCompra * 1.05F);
-                Console.WriteLine(@$"
+
+                if (numParcelas > 0 && numParcelas <= 6)
+                {
+                    float valorCompra = valor / numParcelas;
+                    float ValorJuros = (valorCompra * 1.05F);
+                    Console.WriteLine(@$"
 Parcelas por mes: {numParcelas}
 
 Valor de cada parcela: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
 
-Console.WriteLine(@$"
+                    Console.WriteLine(@$"
 Aperte enter para sair!"
-);
-Console.ReadKey();
-Console.Clear();
+                    );
+                    Console.ReadKey();
+                    Console.Clear();
 
-            }
-            else if (numParcelas > 6 && numParcelas <= 12)
-            {
-                float valorCompra = valor / numParcelas;
-                float ValorJuros = (valorCompra * 1.08F);
-                Console.WriteLine(@$"
+                }
+                else if (numParcelas > 6 && numParcelas <= 12)
+                {
+                    float valorCompra = valor / numParcelas;
+                    float ValorJuros = (valorCompra * 1.08F);
+                    Console.WriteLine(@$"
 Parcelas por mes: {numParcelas}  
-  
+
 Valor de cada parcela: {Math.Round(ValorJuros, 2).ToString("C", new CultureInfo("pt-BR"))}");
 
-Console.WriteLine(@$"
+                    Console.WriteLine(@$"
 Aperte enter para sair!"
-);
-Console.ReadKey();
-Console.Clear();
+                    );
+                    Console.ReadKey();
+                    Console.Clear();
 
+                }
             }
+
         }
     }
 }
